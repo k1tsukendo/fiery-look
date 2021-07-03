@@ -62,9 +62,11 @@ init python:
             system_architecture = os.uname()[4]
 
     # Constants #
-    K1TSU_MOD_VERSION = 'kitsudance 1.2.5'
+    K1TSU_MOD_VERSION = 'kitsudance 1.2.6'
     K1TSU_MOD_NAMESPACE = 'flew'
     K1TSU_MOD_STARTPOINT = 'flew_start'
+
+    # persistent.flew_first_run = 1
 
     if flew_preferences["misc"]["debug_mode"]:
         K1TSU_MOD_NAME = '{font=mods/flew/res/fonts/futura_md.ttf}Огненный Взгляд %s{/font}' % K1TSU_MOD_VERSION
@@ -80,6 +82,17 @@ init python:
 
         K1TSU_BUILDHASH = build_generator(BUILDGEN_BUILDHASH)
         K1TSU_BUILDTIME = build_generator(BUILDGEN_BUILDTIME)
+
+    FLEW_ABOUT = '''Этот репозиторий - форк модификации к игре "Бесконечное Лето", "Огненный Взгляд", созданный "RedHead Team".
+Форк создан мной, k1tsukendo.
+
+Эта модификация целиком и полностью принадлежит "RedHead Team".
+К команде "RedHead Team" я, k1tsukendo, серьёзного отношения не имею.
+Эта версия была создана в целях очистки кода от громадного количества мусора и создания недостающих пунктов меню.
+
+Вся работа проведена с разрешения действующего лидера команды "RedHead Team" Владислава Шорохова.
+
+С любовью, k1tsukendo.'''
 
     # Initialize #
     mods[K1TSU_MOD_STARTPOINT] = K1TSU_MOD_NAME

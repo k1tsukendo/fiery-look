@@ -24,8 +24,12 @@ label flew_start:
     show image Text('{size=70}{font=mods/flew/res/fonts/futura_md.ttf}{color=#db4507}RedHead Team{/color}\nПредставляет{/font}{/size}', slow_cps=25) at truecenter with dspr
     $ renpy.pause(2, hard=True)
 
-    hide text with dissolve
-    $ renpy.pause(.4, hard=True)
+    scene black with dissolve
+
+    # if persistent.flew_first_run == 1:
+    show image Text('{size=34}{font=mods/flew/res/fonts/futura_md.ttf}%s{/font}{/size}' % FLEW_ABOUT, slow_cps=12) at truecenter
+    $ renpy.pause(50)
+    # $ persistent.flew_first_run += 1
 
     if flew_preferences['misc']['debug_mode']:
         scene image im.MatrixColor(get_image('bg/ext_house_of_dv_day.jpg'), im.matrix.desaturate()) with Dissolve(1.3)

@@ -23,7 +23,7 @@ init -127001 python:
         },
         "misc": 
         {
-            "debug_mode": True,  # Change this, Mik.
+            "debug_mode": False,  # Change this, Mik.
         }
     }
 

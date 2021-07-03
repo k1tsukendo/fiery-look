@@ -1,5 +1,5 @@
 fiery-look
-Version KitsuDance 1.2.5
+Version KitsuDance 1.2.6
 ======================================================================
 RU
 
