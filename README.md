@@ -16,10 +16,10 @@ Forked by k1tsukendo.  <br/>
 	* Because stock version's code is really bad.
 	* Also, im Redhead Team's companion and working on menu.
 * **Where can i contact with team?**
-	* <sup>4</sup>
+	* <sup>Links</sup> please.
 
 ## Links
-[RedHead Team's VKontakte Group](https://vk.com/redhead_team "Огненный Взгляд || RedHead Team")
-[k1tsukendo's Telegram](https://t.me/k1tsukendo "k1tsukendo`s Telegram")
-[Original repo](https://github.com/Mikan-DS/LookWithFire_Mod "Mikan-DS/LookWithFire_Mod")
-[Developer's VKontakte page](https://vk.com/mikansei_no_zumen "Mikan Jr")
+[RedHead Team's VKontakte Group](https://vk.com/redhead_team "Огненный Взгляд || RedHead Team")  <br/>
+[k1tsukendo's Telegram](https://t.me/k1tsukendo "k1tsukendo`s Telegram")  <br/>
+[Original repo](https://github.com/Mikan-DS/LookWithFire_Mod "Mikan-DS/LookWithFire_Mod")  <br/>
+[Developer's VKontakte page](https://vk.com/mikansei_no_zumen "Mikan Jr")  <br/>
