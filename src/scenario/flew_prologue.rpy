@@ -3,6 +3,7 @@ label flew_prologue:
     $ new_chapter(1, u"Огненный взгляд {p}Пролог")
     $ prolog_time()
     $ persistent.game_time = 0
+    $ persistent.fl_lm_island = True
 
     if flew_preferences['misc']['debug_mode']:
         show screen flew_debug_screen with dissolve

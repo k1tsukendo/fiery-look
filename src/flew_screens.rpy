@@ -9,11 +9,12 @@ init 100:
     transform chibijump:
         xalign -2.0
         block:
-            pause 60
+            pause 30
             xalign 0.2
             yalign 4
             function gravity_force
             repeat
+
 
     python:
         # This method converts pixels to position for |align| method.

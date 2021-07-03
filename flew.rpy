@@ -58,7 +58,7 @@ init python:
             system_architecture = os.uname()[4]
 
     # Constants #
-    K1TSU_MOD_VERSION = 'kitsudance 1.2.2'
+    K1TSU_MOD_VERSION = 'kitsudance 1.2.5'
     K1TSU_MOD_NAMESPACE = 'flew'
     K1TSU_MOD_STARTPOINT = 'flew_start'
 

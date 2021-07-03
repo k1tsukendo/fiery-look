@@ -25,8 +25,13 @@ label flew_start:
     $ renpy.pause(2, hard=True)
 
     hide text with dissolve
+    $ renpy.pause(.4, hard=True)
 
-    scene bg ext_house_of_dv_day with Dissolve(1.3)
+    if flew_preferences['misc']['debug_mode']:
+        scene image im.MatrixColor(get_image('bg/ext_house_of_dv_day.jpg'), im.matrix.desaturate()) with Dissolve(1.3)
+    else:
+        scene bg ext_house_of_dv_day with Dissolve(1.3)
+
     $ renpy.pause(2, hard=True)
     scene bg ext_house_of_dv_day:
         xalign 0.65 yalign 0.5
@@ -37,8 +42,16 @@ label flew_start:
     scene white with Dissolve(0.2)
     $ renpy.pause(2)
 
-    play music bv_rideon
-    scene bg int_house_of_dv_day with Dissolve(1.3)
+    if not flew_preferences['misc']['debug_mode']:
+        play music bv_rideon
+    else:
+        play music debug_meditation
+
+    if not flew_preferences['misc']['debug_mode']:
+        scene bg int_house_of_dv_day with Dissolve(1.3)
+    else:
+        scene image im.MatrixColor(get_image('bg/int_house_of_dv_day.jpg'), im.matrix.desaturate()) with Dissolve(1.3)
+
     call screen flew_menu_screen
 
     return
@@ -48,8 +61,8 @@ screen flew_menu_screen:
     zorder 999
 
     fixed at DissolveSH:
-        use flew_menu_ui
         use flew_dynamic_particles
+        use flew_menu_ui
 
 
 screen flew_menu_ui:
@@ -61,7 +74,7 @@ screen flew_menu_ui:
         hover 'mods/flew/res/gui/menu/overlay_hover.png'
 
         hotspot adapt_hotspot(996, 505, 740, 110) action Jump('flew_entering')
-        hotspot adapt_hotspot(912, 615, 834, 110) action ShowMenu('flew_indev_notice')  # Preferences
+        hotspot adapt_hotspot(912, 615, 834, 110) action ShowMenu('flew_gallery')  # Preferences
         hotspot adapt_hotspot(1090, 725, 650, 110) action ShowMenu('flew_preferences_ui')  # Gallery
         hotspot adapt_hotspot(1330, 835, 410, 110) action ShowMenu('flew_exit_prompt')  # Exit
         hotspot adapt_hotspot(184, 806, 196, 196) action ShowMenu('flew_vk_redirect')

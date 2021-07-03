@@ -34,7 +34,8 @@ init -127001 python:
 screen flew_preferences_ui:
     tag menu
 
-    use flew_preferenes_ui_tint
+    use flew_dynamic_particles
+    use flew_preferences_ui_tint
 
     # Color selector
     imagemap:
@@ -59,7 +60,6 @@ screen flew_preferences_ui:
 
         hotspot adapt_hotspot(195, 888, 233, 96) action Return()
 
-    use flew_dynamic_particles
     if flew_preferences['misc']['debug_mode']:
         text 'Version ' + K1TSU_MOD_VERSION xalign 0.85 yalign 0.11:
             size 24
@@ -70,7 +70,7 @@ screen flew_preferences_ui:
         font flew_preferences['fonts']['Futura Md']
 
 
-screen flew_preferenes_ui_tint:
+screen flew_preferences_ui_tint:
     zorder 995
     image 'mods/flew/res/gui/menu/tint.jpg':
         at transform:
