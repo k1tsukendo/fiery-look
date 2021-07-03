@@ -30,11 +30,15 @@ init -6969:
 
 init python:
     # Misc #
-    def mod_exists(namespace):
-        if namespace in mods:
-            return True
-        else:
-            return False
+    def mod_exists(namespace, flag=1):
+        if flag == 1:
+            if namespace in mods:
+                return True
+            else: return False
+        elif flag == 2:
+            if namespace in filters:
+                return True
+            else: return False
 
     if not mod_exists('prowl'):
 
@@ -79,3 +83,5 @@ init python:
 
     # Initialize #
     mods[K1TSU_MOD_STARTPOINT] = K1TSU_MOD_NAME
+    if mod_exists('imgsModsMenu', 2):
+        modsImages[K1TSU_MOD_STARTPOINT] = ('mods/flew/thumbnail.jpg', False, K1TSU_MOD_NAME)
