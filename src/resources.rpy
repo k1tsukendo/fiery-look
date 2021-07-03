@@ -18,16 +18,16 @@ init:
 
     # etc. #
     image dv sad swim = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_sad.png")), im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_sad.png")), im.matrix.tint(0.63, 0.78, 0.82) ),
-    True,im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_sad.png")) )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_sad.png")), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_sad.png")), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True,im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_sad.png")) )
 
     image dv shy swim = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_shy.png")), im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_shy.png")), im.matrix.tint(0.63, 0.78, 0.82) ),
-    True,im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_shy.png")) )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_shy.png")), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_shy.png")), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True,im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_3_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_3_swim.png",(0,0), get_image("sprites/normal/dv/dv_3_shy.png")) )
 
     image dv angry swim = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_5_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_5_swim.png",(0,0), get_image("sprites/normal/dv/dv_5_angry.png")), im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_5_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_5_swim.png",(0,0), get_image("sprites/normal/dv/dv_5_angry.png")), im.matrix.tint(0.63, 0.78, 0.82) ),
-    True,im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_5_body.png"),(0,0), "mods/ognenyi_vzglyad/res/images/sprites/dv/composite/dv_5_swim.png",(0,0), get_image("sprites/normal/dv/dv_5_angry.png")) )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_5_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_5_swim.png",(0,0), get_image("sprites/normal/dv/dv_5_angry.png")), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_5_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_5_swim.png",(0,0), get_image("sprites/normal/dv/dv_5_angry.png")), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True,im.Composite((900, 1080), (0,0), get_image("sprites/normal/dv/dv_5_body.png"),(0,0), "mods/flew/res/images/sprites/dv/composite/dv_5_swim.png",(0,0), get_image("sprites/normal/dv/dv_5_angry.png")) )

@@ -28,6 +28,10 @@ label flew_start:
 
     scene bg ext_house_of_dv_day with Dissolve(1.3)
     $ renpy.pause(2, hard=True)
+    scene bg ext_house_of_dv_day:
+        xalign 0.65 yalign 0.5
+        linear 5 zoom 10.5
+
     $ renpy.block_rollback()
 
     scene white with Dissolve(0.2)
@@ -38,7 +42,6 @@ label flew_start:
     call screen flew_menu_screen
 
     return
-
 
 screen flew_menu_screen:
     modal True
@@ -57,7 +60,7 @@ screen flew_menu_ui:
         idle 'mods/flew/res/gui/menu/overlay_idle.png'
         hover 'mods/flew/res/gui/menu/overlay_hover.png'
 
-        hotspot adapt_hotspot(996, 505, 740, 110) action (Hide('flew_menu_screen', dissolve), Jump('flew_entering'))
+        hotspot adapt_hotspot(996, 505, 740, 110) action Jump('flew_entering')
         hotspot adapt_hotspot(912, 615, 834, 110) action ShowMenu('flew_indev_notice')  # Preferences
         hotspot adapt_hotspot(1090, 725, 650, 110) action ShowMenu('flew_preferences_ui')  # Gallery
         hotspot adapt_hotspot(1330, 835, 410, 110) action ShowMenu('flew_exit_prompt')  # Exit
@@ -86,7 +89,7 @@ screen flew_exit_prompt:
 screen flew_vk_redirect:
     tag menu
     fixed at DissolveSH(.5):
-        add 'mods/flew/res/gui/vk_link.jpg'
+        add 'mods/flew/res/gui/menu/vk_link.jpg'
         use flew_confirmation(OpenURL('https://vk.com/redhead_team'), Return())
 
 
@@ -129,4 +132,4 @@ label flew_entering:
         renpy.stop_predict_screen('flew_menu_ui')
         renpy.stop_predict_screen('flew_dynamic_particles')
         renpy.pause(3, hard=True)
-        renpy.jump('flew_prologue')
+    jump flew_prologue
