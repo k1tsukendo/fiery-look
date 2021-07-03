@@ -1,7 +1,7 @@
 # fiery-look
 ### Version KitsuDance 1.2.2
 
-! [alt-RedHead Team logo](https://github.com/k1tsukendo/fiery-look/blob/master/ava_ov.png "Redhead team")
+! [alt-RedHead Team logo](ava_ov.png "Redhead team")
 
 This is a fork of "fiery look" - mod for Everlasting Summer by Redhead Team.  <br/>
 Forked by k1tsukendo.  <br/>
