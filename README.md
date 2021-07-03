@@ -7,7 +7,8 @@
 [RedHead Team's VKontakte Group](https://vk.com/redhead_team "Огненный Взгляд || RedHead Team")  <br/>
 [k1tsukendo's Telegram](https://t.me/k1tsukendo "k1tsukendo`s Telegram")  <br/>
 [Original repo](https://github.com/Mikan-DS/LookWithFire_Mod "Mikan-DS/LookWithFire_Mod")  <br/>
-[Developer's VKontakte page](https://vk.com/mikansei_no_zumen "Mikan Jr")  <br/>
+[Initial developer's VKontakte page](https://vk.com/mikansei_no_zumen "Mikan Jr")  <br/>
+[Initial developer's github page](https://github.com/Mikan-DS "Mikan-DS")
 
 ### Eng
 
