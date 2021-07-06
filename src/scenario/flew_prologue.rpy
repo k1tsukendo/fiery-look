@@ -4,6 +4,7 @@ label flew_prologue:
     $ prolog_time()
     $ persistent.game_time = 0
     $ persistent.fl_lm_island = True
+    $ gui.text_font = flew_preference_setFont
 
     if flew_preferences['misc']['debug_mode']:
         show screen flew_debug_screen with dissolve

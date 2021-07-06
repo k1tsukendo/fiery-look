@@ -19,11 +19,14 @@ init -127001 python:
         },
         "fonts": 
         {
-            "Futura Md": "mods/flew/res/fonts/futura_md.ttf"
+            "Futura Md": "mods/flew/res/fonts/futura_md.ttf",
+            "Aldrich": "mods/flew/res/fonts/aldrich.ttf",
+            "Fira Code": "mods/flew/res/fonts/fira_code.ttf",
+            "Open Sans": "mods/flew/res/fonts/open_sans.ttf"
         },
         "misc": 
         {
-            "debug_mode": False,  # Change this, Mik.
+            "debug_mode": True,  # Change this, Mik.
         }
     }
 
@@ -37,13 +40,14 @@ screen flew_preferences_ui:
     use flew_dynamic_particles
     use flew_preferences_ui_tint
 
-    # Color selector
+    
     imagemap:
         alpha True
         cache True
         idle 'mods/flew/res/gui/menu/overlay_preferences_idle.png'
         hover 'mods/flew/res/gui/menu/overlay_preferences_hover.png'
 
+        # Color selector #
         hotspot adapt_hotspot(274, 356, 85, 82) action SetVariable('flew_preference_meColor', flew_preferences['colors']['prowl'])
         hotspot adapt_hotspot(360, 356, 85, 82) action SetVariable('flew_preference_meColor', flew_preferences['colors']['redhead'])
         hotspot adapt_hotspot(443, 356, 85, 82) action SetVariable('flew_preference_meColor', flew_preferences['colors']['rb'])
@@ -57,6 +61,13 @@ screen flew_preferences_ui:
         hotspot adapt_hotspot(526, 444, 85, 82) action SetVariable('flew_preference_meColor', flew_preferences['colors']['ubuntu_backgr'])
         hotspot adapt_hotspot(621, 462, 188, 54) action SetVariable('flew_preference_meColor', flew_preferences['colors']['white'])
 
+        # Font Selector #
+        hotspot adapt_hotspot(264, 724, 96, 38) action SetVariable('flew_preference_setFont', flew_preferences['fonts']['Aldrich'])
+        hotspot adapt_hotspot(366, 718, 118, 38) action SetVariable('flew_preference_setFont', flew_preferences['fonts']['Futura Md'])
+        hotspot adapt_hotspot(490, 724, 135, 30) action SetVariable('flew_preference_setFont', flew_preferences['fonts']['Fira Code'])
+        hotspot adapt_hotspot(632, 722, 132, 38) action SetVariable('flew_preference_setFont', flew_preferences['fonts']['Open Sans'])
+
+        hotspot adapt_hotspot(1482, 122, 232, 646) action ToggleDict(dict=flew_preferences, key='misc', true_value={'debug_mode': True}, false_value={'debug_mode': False})
 
         hotspot adapt_hotspot(195, 888, 233, 96) action Return()
 
@@ -68,6 +79,10 @@ screen flew_preferences_ui:
         size 44
         color flew_preference_meColor
         font flew_preferences['fonts']['Futura Md']
+
+    text 'Розовые волосы - это круто!' xalign 0.20 yalign 0.75:
+        font flew_preference_setFont
+        size 44
 
 
 screen flew_preferences_ui_tint:

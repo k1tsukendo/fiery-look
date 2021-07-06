@@ -1,4 +1,7 @@
-init:
+init -1:
+
+    # Misc #
+    $ renpy.display.screen.screens[('say', None)] = renpy.display.screen.screens[('flew_say_wndw', None)]
 
     # Transitions # thx, cap.
     $ fla = Fade(.25,  .75, .75, color="#FFF")
@@ -15,6 +18,9 @@ init:
         ease 0.35 xalign 0.65 yalign 0.65
         ease 0.35 xalign 0.50 yalign 0.50
         repeat
+
+    # Characers #
+    define flew_sem = Character(u'Семён', color=flew_preference_meColor)
 
     # etc. #
     image dv sad swim = ConditionSwitch(
